@@ -4,16 +4,33 @@ namespace Match3
 {
     public class ActivatablePiece : MonoBehaviour
     {
-        protected GamePiece piece;
+        protected GamePiece _piece;
+        private ClearablePiece _clearablePiece;
+        private ClearColorPiece _clearColorPiece;
+        private ClearLinePiece _clearLinePiece;
 
-        private void Awake()
+        protected virtual void Awake()
         {
-            piece = GetComponent<GamePiece>();
+            _piece = GetComponent<GamePiece>();
+            _clearablePiece = GetComponent<ClearablePiece>();
+            _clearColorPiece = GetComponent<ClearColorPiece>();
+            _clearLinePiece = GetComponent<ClearLinePiece>();
         }
 
         public virtual void Activate()
         {
-            // Base implementation - override in subclasses
+            if (_clearColorPiece != null)
+            {
+                _clearColorPiece.Activate();
+            }
+            else if (_clearLinePiece != null)
+            {
+                _clearLinePiece.Activate();
+            }
+            else if (_clearablePiece != null)
+            {
+                _clearablePiece.Clear();
+            }
         }
     }
 }

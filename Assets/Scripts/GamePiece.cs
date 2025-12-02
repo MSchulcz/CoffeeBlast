@@ -46,7 +46,8 @@ namespace Match3
         public ActivatablePiece ActivatableComponent => _activatableComponent;
 
         private Vector3 _dragStartPos;
-        private bool _isDragging;
+        private Vector3 _targetPosition;
+        private const float DRAG_SPEED = 20f; // Speed for smooth dragging
 
         private void Awake()
         {
@@ -69,29 +70,41 @@ namespace Match3
         private void OnMouseDown()
         {
             _dragStartPos = transform.position;
-            _isDragging = false;
             _gameGrid.PressPiece(this);
         }
 
         private void OnMouseUp()
         {
-            Vector3 dragDelta = transform.position - _dragStartPos;
-            float distance = dragDelta.magnitude;
-            float cellSize = 1.0f; // Assuming cell size is 1 unit
-
-            if (distance < cellSize * 0.5f && IsActivatable())
+            if (IsActivatable())
             {
                 _activatableComponent.Activate();
             }
             else
             {
-                _gameGrid.ReleasePiece();
+                Vector3 dragDelta = transform.position - _dragStartPos;
+                float distance = dragDelta.magnitude;
+                float cellSize = 1.0f; // Assuming cell size is 1 unit
+
+                if (distance < cellSize * 0.5f)
+                {
+                    // If it's a short click, do nothing or handle as needed
+                }
+                else
+                {
+                    _gameGrid.ReleasePiece();
+                }
+
+                // Ensure piece returns to exact grid position if not swapped
+                if (_movableComponent != null)
+                {
+                    _movableComponent.ReturnToPosition(_gameGrid.fillTime);
+                }
             }
         }
 
         private void OnMouseDrag()
         {
-            if (!IsMovable() || _gameGrid.IsFilling) return;
+            if (!IsMovable() || _gameGrid.IsFilling || IsActivatable()) return;
 
             // Convert mouse position to world space
             Vector3 mousePos = Input.mousePosition;
@@ -124,11 +137,11 @@ namespace Match3
             worldPos.x = Mathf.Clamp(worldPos.x, gridMin.x - cellSize, gridMax.x + cellSize);
             worldPos.y = Mathf.Clamp(worldPos.y, gridMin.y - cellSize, gridMax.y + cellSize);
 
-            // Move piece to clamped position
-            transform.position = worldPos;
+            // Smoothly move piece to clamped position
+            transform.position = Vector3.Lerp(transform.position, worldPos, Time.deltaTime * DRAG_SPEED);
         }
 
-        public bool IsMovable() => _movableComponent != null && !IsActivatable();
+        public bool IsMovable() => _movableComponent != null;
 
         public bool IsColored() => _colorComponent != null;
 
