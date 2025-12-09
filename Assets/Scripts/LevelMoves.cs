@@ -13,7 +13,7 @@
             type = LevelType.Moves;
 
             hud.SetLevelType(type);
-            hud.SetScore(targetScore - currentScore); // Отображаем оставшиеся очки
+            hud.SetScore(currentScore); 
             hud.SetTarget(targetScore);
             hud.SetRemaining(numMoves);
         }
@@ -21,20 +21,22 @@
         public override void OnMove()
         {
             _movesUsed++;
+            int movesLeft = numMoves - _movesUsed;
+            hud.SetRemaining(movesLeft);
+            //hud.SetRemaining(numMoves - _movesUsed); //вот тут аккуратнее(убрал от греха подальше)
 
-            hud.SetRemaining(numMoves - _movesUsed);
-            hud.SetScore(targetScore - currentScore); // Обновляем оставшиеся очки
-
-            if (numMoves - _movesUsed != 0) return;
-
+            // Проверяем достижение цели сразу
             if (currentScore >= targetScore)
             {
                 GameWin();
+                return;
             }
-            else
+
+            // Если ходы закончились — поражение
+            if (movesLeft == 0)
             {
                 GameLose();
-            }
+            }   
         }
     }
 }

@@ -604,9 +604,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameGrid: {fileID: 581336197}
   hud: {fileID: 97316481}
-  score1Star: 15000
-  score2Star: 18000
-  score3Star: 21000
+  score1Star: 10000
+  score2Star: 12500
+  score3Star: 15000
   numMoves: 14
   targetScore: 15000
 --- !u!4 &1773144089
