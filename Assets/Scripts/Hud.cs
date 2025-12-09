@@ -22,7 +22,7 @@ namespace Match3
         {
             for (int i = 0; i < stars.Length; i++)
             {
-                stars[i].enabled = i == _starIndex;
+                stars[i].enabled = false; // Изначально все звезды выключены
             }
         }
 
@@ -32,22 +32,16 @@ namespace Match3
 
             int visibleStar = 0;
 
-            if (score >= level.score1Star && score < level.score2Star)
-            {
-                visibleStar = 1;
-            }
-            else if (score >= level.score2Star && score < level.score3Star)
-            {
-                visibleStar = 2;
-            }
-            else if (score >= level.score3Star)
-            {
+            if (score >= level.score3Star)
                 visibleStar = 3;
-            }
+            else if (score >= level.score2Star)
+                visibleStar = 2;
+            else if (score >= level.score1Star)
+                visibleStar = 1;
 
             for (int i = 0; i < stars.Length; i++)
             {
-                stars[i].enabled = (i == visibleStar);
+                stars[i].enabled = (i < visibleStar);
             }
 
             _starIndex = visibleStar;
@@ -78,15 +72,29 @@ namespace Match3
             }
         }
 
-        public void OnGameWin(int score)
+        /// <summary>
+        /// Вызывается после победы на уровне
+        /// </summary>
+        public void OnGameWin(int score, int starCount)
         {
-            gameOver.ShowWin(score, _starIndex);
-            if (_starIndex > PlayerPrefs.GetInt(SceneManager.GetActiveScene().name, 0))
+            // Показываем окно победы
+            gameOver.ShowWin(score, starCount);
+
+            // Обновляем PlayerPrefs со звездами
+            string levelName = SceneManager.GetActiveScene().name;
+            int savedStars = PlayerPrefs.GetInt(levelName, 0);
+            if (starCount > savedStars)
             {
-                PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, _starIndex);
+                PlayerPrefs.SetInt(levelName, starCount);
             }
         }
 
-        public void OnGameLose() => gameOver.ShowLose();
+        /// <summary>
+        /// Вызывается после поражения
+        /// </summary>
+        public void OnGameLose()
+        {
+            gameOver.ShowLose();
+        }
     }
 }

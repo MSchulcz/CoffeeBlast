@@ -58,12 +58,26 @@ namespace Match3
 
             if (_didWin)
             {
-                hud.OnGameWin(currentScore);
+                int starCount = CalculateStars(currentScore);
+                hud.OnGameWin(currentScore, starCount);
             }
             else
             {
                 hud.OnGameLose();
             }
+        }
+
+        /// <summary>
+        /// Возвращает количество звёзд от 0 до 3 в зависимости от текущего счета и порогов.
+        /// Если порог равен или меньше нуля, он игнорируется.
+        /// </summary>
+        protected int CalculateStars(int score)
+        {
+            // Если установлены пороги — вычисляем количество звёзд по убывающему приоритету.
+            if (score3Star > 0 && score >= score3Star) return 3;
+            if (score2Star > 0 && score >= score2Star) return 2;
+            if (score1Star > 0 && score >= score1Star) return 1;
+            return 0;
         }
     }
 }
