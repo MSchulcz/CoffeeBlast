@@ -158,6 +158,17 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u0412\u044B \u043F\u0440\u043E\u0438\u0433\u0440\u0430\u043B\u0438"
       objectReference: {fileID: 0}
+    - target: {fileID: 114978421634954518, guid: e48363766c8c65a40931017ebcedffa0,
+        type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114978421634954518, guid: e48363766c8c65a40931017ebcedffa0,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300022, guid: 1eaee135ce037439d925cee5e41ce026,
+        type: 3}
     - target: {fileID: 224754216104965626, guid: e48363766c8c65a40931017ebcedffa0,
         type: 3}
       propertyPath: m_Pivot.x
@@ -326,7 +337,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 77be3e2575e9d7d4aa3354bbaa28c49f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f7f7e717a11bf5b49a9a2373a1a48ddd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

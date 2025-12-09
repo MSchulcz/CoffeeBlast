@@ -24,7 +24,7 @@ namespace Match3
         public int xDim;
         public int yDim;
         public float fillTime;
-        public float hintDelay = 10f; // Time in seconds before showing hint
+        public float hintDelay = 3f; // Time in seconds before showing hint
 
         public Level level;
 

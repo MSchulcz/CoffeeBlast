@@ -82,7 +82,7 @@ namespace Match3
 
         public void OnDoneClicked()
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("LevelSelect");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("MainScene");
         }
 
     }
