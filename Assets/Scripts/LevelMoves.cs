@@ -1,4 +1,4 @@
-﻿namespace Match3
+﻿﻿namespace Match3
 {
     public class LevelMoves : Level
     {
@@ -13,7 +13,7 @@
             type = LevelType.Moves;
 
             hud.SetLevelType(type);
-            hud.SetScore(currentScore);
+            hud.SetScore(targetScore - currentScore); // Отображаем оставшиеся очки
             hud.SetTarget(targetScore);
             hud.SetRemaining(numMoves);
         }
@@ -23,9 +23,10 @@
             _movesUsed++;
 
             hud.SetRemaining(numMoves - _movesUsed);
+            hud.SetScore(targetScore - currentScore); // Обновляем оставшиеся очки
 
             if (numMoves - _movesUsed != 0) return;
-        
+
             if (currentScore >= targetScore)
             {
                 GameWin();

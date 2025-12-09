@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿﻿using UnityEngine;
 
 namespace Match3
 {
@@ -10,7 +10,7 @@ namespace Match3
 
         private float _timer;
 
-        private void Start ()
+        private void Start()
         {
             type = LevelType.Timer;
 
@@ -38,6 +38,5 @@ namespace Match3
                 }
             }
         }
-	
     }
 }

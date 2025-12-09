@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -18,7 +18,7 @@ namespace Match3
 
         private int _starIndex = 0;
 
-        private void Start ()
+        private void Start()
         {
             for (int i = 0; i < stars.Length; i++)
             {
@@ -36,7 +36,7 @@ namespace Match3
             {
                 visibleStar = 1;
             }
-            else if  (score >= level.score2Star && score < level.score3Star)
+            else if (score >= level.score2Star && score < level.score3Star)
             {
                 visibleStar = 2;
             }

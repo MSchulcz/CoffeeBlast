@@ -1,4 +1,4 @@
-﻿namespace Match3
+﻿﻿namespace Match3
 {
     public class LevelObstacles : Level
     {
@@ -7,11 +7,11 @@
         public PieceType[] obstacleTypes;
 
         private const int ScorePerPieceCleared = 1000;
-    
+
         private int _movesUsed = 0;
         private int _numObstaclesLeft;
 
-        private void Start ()
+        private void Start()
         {
             type = LevelType.Obstacle;
 
@@ -45,11 +45,11 @@
             for (int i = 0; i < obstacleTypes.Length; i++)
             {
                 if (obstacleTypes[i] != piece.Type) continue;
-            
+
                 _numObstaclesLeft--;
                 hud.SetTarget(_numObstaclesLeft);
                 if (_numObstaclesLeft != 0) continue;
-            
+
                 currentScore += ScorePerPieceCleared * (numMoves - _movesUsed);
                 hud.SetScore(currentScore);
                 GameWin();

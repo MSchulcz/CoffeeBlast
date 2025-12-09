@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Match3
 {
-    public class SettingsCloseButton : MonoBehaviour
+    public class PlayCloseButton : MonoBehaviour
     {
         // UI элемент, который нужно деактивировать
         public GameObject uiElement;
@@ -36,7 +36,7 @@ namespace Match3
                 image.color = new Color(0, 0, 0, 0); // Полностью прозрачный
                 image.raycastTarget = true;
 
-                // Добавляем обработчик клика с проверкой на SettingsPanel и CloseButton
+                // Добавляем обработчик клика с проверкой на PlayPanel и PlayButton
                 Button screenButton = clickHandler.AddComponent<Button>();
                 screenButton.onClick.AddListener(() => {
                     // Получаем позицию клика
@@ -45,26 +45,33 @@ namespace Match3
                     List<RaycastResult> results = new List<RaycastResult>();
                     EventSystem.current.RaycastAll(eventData, results);
 
-                    // Проверяем, был ли клик по SettingsPanel или CloseButton
-                    bool clickedOnSettingsPanel = false;
-                    bool clickedOnCloseButton = false;
-                    foreach (RaycastResult result in results)
-                    {
-                        if (result.gameObject.name == "SettingsPanel")
-                        {
-                            clickedOnSettingsPanel = true;
-                        }
-                        else if (result.gameObject.name == "CloseButton")
-                        {
-                            clickedOnCloseButton = true;
-                        }
-                    }
+// Проверяем, был ли клик по PlayPanel или PlayButton
+bool clickedOnPlayPanel = false;
+bool clickedOnPlayButton = false;
+bool clickedOnPlayCloseButton = false;
+foreach (RaycastResult result in results)
+{
+    if (result.gameObject.name == "PlayPanel")
+    {
+        clickedOnPlayPanel = true;
+    }
+    else if (result.gameObject.name == "PlayButton")
+    {
+        clickedOnPlayButton = true;
+    }
+    else if (result.gameObject.name == "PlayCloseButton")
+    {
+        clickedOnPlayCloseButton = true;
+    }
+}
 
-                    // Закрываем только если клик не был по SettingsPanel или был по CloseButton
-                    if (!clickedOnSettingsPanel || clickedOnCloseButton)
-                    {
-                        CloseElement();
-                    }
+
+// Закрываем только если клик не был по PlayPanel или был по PlayButton или PlayCloseButton
+if (!clickedOnPlayPanel || clickedOnPlayButton || clickedOnPlayCloseButton)
+{
+    CloseElement();
+}
+
                 });
 
                 // Устанавливаем размеры и позицию

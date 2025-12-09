@@ -41,10 +41,14 @@ public class MainMenuCameraScript : MonoBehaviour
             transform.position = newPosition;
         }
 
-        // Camera zoom with mouse wheel
-        float scroll = Input.GetAxis("Mouse ScrollWheel");
-        targetZoom -= scroll * zoomSpeed;
-        targetZoom = Mathf.Clamp(targetZoom, minZoom, maxZoom);
-        cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, targetZoom, Time.deltaTime * zoomSpeed);
+// Camera zoom with mouse wheel
+float scroll = Input.GetAxis("Mouse ScrollWheel");
+if (scroll != 0)
+{
+    targetZoom -= scroll * zoomSpeed;
+    targetZoom = Mathf.Clamp(targetZoom, minZoom, maxZoom);
+    cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, targetZoom, Time.deltaTime * zoomSpeed);
+}
+
     }
 }
