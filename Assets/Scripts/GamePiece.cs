@@ -22,32 +22,26 @@ namespace Match3
         }
 
         private PieceType _type;
-
         public PieceType Type => _type;
 
         private GameGrid _gameGrid;
-
         public GameGrid GameGridRef => _gameGrid;
 
         private MovablePiece _movableComponent;
-
         public MovablePiece MovableComponent => _movableComponent;
 
         private ColorPiece _colorComponent;
-
         public ColorPiece ColorComponent => _colorComponent;
 
         private ClearablePiece _clearableComponent;
-
         public ClearablePiece ClearableComponent => _clearableComponent;
 
         private ActivatablePiece _activatableComponent;
-
         public ActivatablePiece ActivatableComponent => _activatableComponent;
 
         private Vector3 _dragStartPos;
-        private Vector3 _targetPosition;
         private const float DRAG_SPEED = 20f; // Speed for smooth dragging
+        private const float CLICK_THRESHOLD = 0.1f; // Считаем малое движение кликом
 
         private void Awake()
         {
@@ -75,30 +69,31 @@ namespace Match3
 
         private void OnMouseUp()
         {
-            if (IsActivatable())
+            Vector3 dragDelta = transform.position - _dragStartPos;
+            float distance = dragDelta.magnitude;
+            bool isClick = distance < CLICK_THRESHOLD;
+
+            // Если фишка активируемая и это клик — активируем её
+            if (IsActivatable() && isClick)
             {
                 _activatableComponent.Activate();
-            }
-            else
-            {
-                Vector3 dragDelta = transform.position - _dragStartPos;
-                float distance = dragDelta.magnitude;
-                float cellSize = 1.0f; // Assuming cell size is 1 unit
 
-                if (distance < cellSize * 0.5f)
-                {
-                    // If it's a short click, do nothing or handle as needed
-                }
-                else
-                {
-                    _gameGrid.ReleasePiece();
-                }
-
-                // Ensure piece returns to exact grid position if not swapped
-                if (_movableComponent != null)
-                {
+                // Возврат на сетку для Movable
+                if (IsMovable())
                     _movableComponent.ReturnToPosition(_gameGrid.fillTime);
-                }
+
+                return;
+            }
+
+            // Если фишка Movable и движение превышает порог — обрабатываем перетаскивание
+            if (IsMovable() && distance >= CLICK_THRESHOLD)
+            {
+                _gameGrid.ReleasePiece();
+                _movableComponent.ReturnToPosition(_gameGrid.fillTime);
+            }
+            else if (IsMovable()) // Если клик без движения — просто вернуть на место
+            {
+                _movableComponent.ReturnToPosition(_gameGrid.fillTime);
             }
         }
 
@@ -106,47 +101,32 @@ namespace Match3
         {
             if (!IsMovable() || _gameGrid.IsFilling || IsActivatable()) return;
 
-            // Convert mouse position to world space
             Vector3 mousePos = Input.mousePosition;
-            mousePos.z = Camera.main.nearClipPlane; // Set z to near clip plane for screen to world conversion
+            mousePos.z = Camera.main.nearClipPlane;
             Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
-            worldPos.z = 0; // Assuming 2D game, set z to 0
+            worldPos.z = 0;
 
-            // Calculate drag delta
             Vector3 dragDelta = worldPos - _dragStartPos;
-
-            // Determine primary drag direction (horizontal or vertical)
             bool isHorizontal = Mathf.Abs(dragDelta.x) > Mathf.Abs(dragDelta.y);
 
-            // Restrict movement to the primary axis
             if (isHorizontal)
-            {
-                worldPos.y = _dragStartPos.y; // Lock Y to start position
-            }
+                worldPos.y = _dragStartPos.y;
             else
-            {
-                worldPos.x = _dragStartPos.x; // Lock X to start position
-            }
+                worldPos.x = _dragStartPos.x;
 
-            // Get grid bounds
             Vector2 gridMin = _gameGrid.GetWorldPosition(0, _gameGrid.yDim - 1);
             Vector2 gridMax = _gameGrid.GetWorldPosition(_gameGrid.xDim - 1, 0);
 
-            // Clamp position within grid bounds, but allow slight overhang for adjacent pieces
-            float cellSize = 1.0f; // Assuming cell size is 1 unit
-            worldPos.x = Mathf.Clamp(worldPos.x, gridMin.x - cellSize, gridMax.x + cellSize);
-            worldPos.y = Mathf.Clamp(worldPos.y, gridMin.y - cellSize, gridMax.y + cellSize);
+            float cellSizeClamp = 1.0f;
+            worldPos.x = Mathf.Clamp(worldPos.x, gridMin.x - cellSizeClamp, gridMax.x + cellSizeClamp);
+            worldPos.y = Mathf.Clamp(worldPos.y, gridMin.y - cellSizeClamp, gridMax.y + cellSizeClamp);
 
-            // Smoothly move piece to clamped position
             transform.position = Vector3.Lerp(transform.position, worldPos, Time.deltaTime * DRAG_SPEED);
         }
 
         public bool IsMovable() => _movableComponent != null;
-
         public bool IsColored() => _colorComponent != null;
-
         public bool IsClearable() => _clearableComponent != null;
-
         public bool IsActivatable() => _activatableComponent != null;
     }
 }

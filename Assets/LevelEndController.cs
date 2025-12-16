@@ -22,7 +22,7 @@ public class LevelEndController : MonoBehaviour
             // Если LevelLoader не найден — всё ещё можно начислить и вернуться вручную
             ProgressController.AddCoins(rewardCoins);
             ProgressController.CurrentLevel = ProgressController.CurrentLevel + 1;
-            UnityEngine.SceneManagement.SceneManager.LoadScene("MainScene");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("MainSceneNew"); //вот тут какой-то прикол произошёл - пришлось вручную менять имя сцены
         }
     }
 
