@@ -1,0 +1,1198 @@
+fileFormatVersion: 2
+guid: 8942106d3e2d93144bbadc5a123831ee
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: nature1_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1225
+        width: 140
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5338d0b9ac44f564ab69d861aec45429
+      internalID: -1381434709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_1
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1214
+        width: 200
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4ebfa5938caa84aaa9cb53a5bbe5a5
+      internalID: 1442857500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_2
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1211
+        width: 231
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a1598c2384e36439860f6b6f47208e
+      internalID: 1254760464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_3
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1208
+        width: 199
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c656e4a4c9ee04b849b8d9da27f4a1
+      internalID: 1276253864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_4
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1053
+        width: 176
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82c4648a8035514caf323dd33251ef4
+      internalID: 2026375738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_5
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1050
+        width: 146
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d6e25b2705ac64caf5fb8b53aede0b
+      internalID: 1390779632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_6
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 1053
+        width: 186
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7427f113df6ea864c8f57e924db496d9
+      internalID: -613585298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_7
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1057
+        width: 299
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a788fe5ed98815742ad995355a00dc58
+      internalID: 166276328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 920
+        width: 143
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c554fef06d21b4dae853bf12a35edb
+      internalID: 2009271939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_9
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 920
+        width: 182
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78c113abaebcbd4c92ddad9d5704cca
+      internalID: -2116868186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_10
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 921
+        width: 233
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 585c1feb99d395448919ce2a567109ce
+      internalID: 1892753029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_11
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 932
+        width: 199
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ac312523dc1a84c834b123e42dba0e
+      internalID: 307044069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_12
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 811
+        width: 135
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f4c711fca2673478a149b906718254
+      internalID: -915762892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_13
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 809
+        width: 109
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032db0e2b89bb464f9ab9602526a4a0c
+      internalID: 207198725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_14
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 802
+        width: 278
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65316255757bb7e47a09dd00cf08ae39
+      internalID: 2022398934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_15
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 809
+        width: 214
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4262aa982ca06a244b5e6c2496782630
+      internalID: 951115979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_16
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 680
+        width: 91
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eac47fae4b81f040b60125f07e723fb
+      internalID: -2132234191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_17
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 683
+        width: 140
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b778770c001adef4ea09684c0b3f5db7
+      internalID: -1395380023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_18
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 682
+        width: 134
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9079d3aaa3720834aae7a0f46695fd2d
+      internalID: 1882419571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_19
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 686
+        width: 190
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc800d717ee434a468c508835c1415ae
+      internalID: 545784757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_20
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 685
+        width: 133
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676baa06d3e8f9a499338cefa8487773
+      internalID: 907854956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_21
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 554
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22941c7f8708d1a44b4b027a4dbfa93c
+      internalID: 1614094402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_22
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 556
+        width: 93
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ee5f58bda4d9141a742a918a2b2fc5
+      internalID: -1590752096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_23
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 554
+        width: 134
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a84051dc9323ac4693e0fffbbb6324a
+      internalID: 1421328669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_24
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 562
+        width: 80
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1982a68e522be94586f62c9d3a52b7f
+      internalID: -1857086527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_25
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 560
+        width: 91
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81d9ac92157e574f8b1be14630b6a81
+      internalID: 828736809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_26
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 549
+        width: 142
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe55e9e7a6e40da4a83be60c290e840f
+      internalID: 1586591777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_27
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 420
+        width: 77
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de59663d2a691f74ca62067f150d88c1
+      internalID: -1618132234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_28
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 420
+        width: 77
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6dfc6789d3b3749987fe644240e76f
+      internalID: -54549683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_29
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 422
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9450bd30a100d6a40a61664002cada66
+      internalID: 1428748231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_30
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 422
+        width: 77
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d90f476ee747564aa6ded212912b4dd
+      internalID: 150289614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_31
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 425
+        width: 140
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d1225b35576af42b6aeba8a09289f0
+      internalID: -1756862294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_32
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 333
+        width: 103
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0063f3224e164499bec3c77a942d6c
+      internalID: 1647349713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_33
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 281
+        width: 175
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa87ca39422d6b41bc39b32e5a97c45
+      internalID: 1761039153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_34
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 279
+        width: 162
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc8691343446db489ecca1456133b2b
+      internalID: 662017083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_35
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 295
+        width: 169
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496a81275c8657944b02586aa4e2fc97
+      internalID: -897512209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_36
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 280
+        width: 134
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a197964d51afa244998588a52ada17e0
+      internalID: 445717304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_37
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 139
+        width: 149
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f5997b30af7194a9762bb02012dccb
+      internalID: -1481473261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_38
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 140
+        width: 63
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04bda925982438b44932bed34d4e1769
+      internalID: -1205234695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_39
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 139
+        width: 137
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9109eec9a04378845a4b6556d19a7a2f
+      internalID: -375173773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_40
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 136
+        width: 108
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7070c69b9187c634fb527044793583c6
+      internalID: 182210358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_41
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 62
+        width: 77
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a461096c4b722d41ac876b2ad7755e3
+      internalID: 1254136991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_42
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 63
+        width: 96
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0480e7bcd1b378441b9bd5f3effc673d
+      internalID: -1193101290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_43
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 38
+        width: 137
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a815894cfa71ae446a125f6ba31902bb
+      internalID: -893686119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_44
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 52
+        width: 63
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5945b84de7d074c8404ab6585c154b
+      internalID: -436524692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_45
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 44
+        width: 160
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515cdd05685458146a80f119c275e122
+      internalID: 1368985605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature1_46
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 53
+        width: 77
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90804405e8d91145a2a16b91908654e
+      internalID: -1150393458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e66fc8e744c2adf4bb4a8a31f9486317
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      nature1_0: -1381434709
+      nature1_1: 1442857500
+      nature1_10: 1892753029
+      nature1_11: 307044069
+      nature1_12: -915762892
+      nature1_13: 207198725
+      nature1_14: 2022398934
+      nature1_15: 951115979
+      nature1_16: -2132234191
+      nature1_17: -1395380023
+      nature1_18: 1882419571
+      nature1_19: 545784757
+      nature1_2: 1254760464
+      nature1_20: 907854956
+      nature1_21: 1614094402
+      nature1_22: -1590752096
+      nature1_23: 1421328669
+      nature1_24: -1857086527
+      nature1_25: 828736809
+      nature1_26: 1586591777
+      nature1_27: -1618132234
+      nature1_28: -54549683
+      nature1_29: 1428748231
+      nature1_3: 1276253864
+      nature1_30: 150289614
+      nature1_31: -1756862294
+      nature1_32: 1647349713
+      nature1_33: 1761039153
+      nature1_34: 662017083
+      nature1_35: -897512209
+      nature1_36: 445717304
+      nature1_37: -1481473261
+      nature1_38: -1205234695
+      nature1_39: -375173773
+      nature1_4: 2026375738
+      nature1_40: 182210358
+      nature1_41: 1254136991
+      nature1_42: -1193101290
+      nature1_43: -893686119
+      nature1_44: -436524692
+      nature1_45: 1368985605
+      nature1_46: -1150393458
+      nature1_5: 1390779632
+      nature1_6: -613585298
+      nature1_7: 166276328
+      nature1_8: 2009271939
+      nature1_9: -2116868186
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
