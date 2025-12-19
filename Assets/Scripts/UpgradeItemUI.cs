@@ -17,4 +17,9 @@ public class UpgradeItemUI : MonoBehaviour
         actionButton.onClick.RemoveAllListeners();
         actionButton.onClick.AddListener(() => onClick());
     }
+
+    public void OnActionButtonClicked()
+    {
+        Debug.Log("[UI] ActionButton clicked");
+    }
 }
