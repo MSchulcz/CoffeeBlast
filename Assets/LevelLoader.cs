@@ -13,7 +13,7 @@ public class LevelLoader : MonoBehaviour
     [SerializeField] private LevelDatabase database;
 
     [Tooltip("Имя MainScene (точно как в Build Settings)")]
-    [SerializeField] private string mainSceneName = "MainScene";
+    [SerializeField] private string mainSceneName = "MainSceneNew";
 
     private void Awake()
     {

@@ -8613,7 +8613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   database: {fileID: 11400000, guid: 25b9e955358d79c468b547a1810135c7, type: 2}
-  mainSceneName: MainScene
+  mainSceneName: MainSceneNew
 --- !u!4 &1137424624
 Transform:
   m_ObjectHideFlags: 0
@@ -8848,7 +8848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1198211596
 RectTransform:
   m_ObjectHideFlags: 0
@@ -63426,7 +63426,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 87c316b602156405d92e616621658222, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0

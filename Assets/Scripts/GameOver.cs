@@ -87,7 +87,7 @@ namespace Match3
             else
             {
                 // fallback на MainScene
-                UnityEngine.SceneManagement.SceneManager.LoadScene("MainScene");
+                UnityEngine.SceneManagement.SceneManager.LoadScene("MainSceneNew");
             }
         }
     }
